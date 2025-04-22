@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>CVR Webpage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img id="logo" src="images/logo1.png"></a>
+            <i class="fa fa-bars menu-icon" id="open-menu" onClick="showMenu()"></i>
+
+            <!-- Navigation Links -->
+            <div class="nav-links" id="navLinks">
+                <!-- Close Icon -->
+                <i class="fa fa-times close-icon" id="close-menu" onClick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+
+                </ul>
+            </div>
+
+        </nav>
+        <h1>About Us</h1>
+    </section>
+    <!--about us content------------->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1> We are the largest university</h1>
+                <p>CVR College of Engineering, established in 2001 and located in Hyderabad, Telangana, is a premier
+                    private engineering institution known for its commitment to academic excellence and innovation.
+                    Affiliated with JNTU Hyderabad and approved by AICTE, the college offers a range of undergraduate
+                    and postgraduate programs in engineering and technology. It is accredited by the NBA and NAAC with
+                    an 'A' grade and recognized as an autonomous institution by the UGC. With state-of-the-art
+                    infrastructure, dedicated faculty, and a focus on research and holistic development, CVR College
+                    provides a dynamic learning environment that nurtures future-ready engineers and leaders.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+
+            </div>
+            <div class="about-col">
+                <img src="images/about.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--------------footer----------->
+    <section class="footer">
+
+        <h4>About Us</h4>
+        <p>CVR College of Engineering, established in 2001, is a pioneer in providing quality education to students.
+            CVRCE, true to its vision, is in Pursuit of <br>Excellence while catering to the changing needs of the
+            student community at large for the last couple of decades.</p>
+        <div class="icons">
+            <i class="fab fa-twitter fa-lg"></i>
+            <i class="fab fa-linkedin fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+            <i class="fab fa-facebook fa-lg"></i>
+        </div>
+        <p>Made <i class="far fa-heart"></i> for CVR</p>
+    </section>
+
+
+    <!--javascript toggle menu-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-220px";
+        }
+    </script>
+
+</body>
+
+</html>
